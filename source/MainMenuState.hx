@@ -27,9 +27,9 @@ using StringTools;
 class MainMenuState extends MusicBeatState
 {
 	#if !debug
-	public static var denpaEngineVersion:String = '0.7.0b'; //This is also used for Discord RPC
+	public static var denpaEngineVersion:String = '0.1.0'; //This is also used for Discord RPC
 	#else
-	public static var denpaEngineVersion:String = '0.7.0b Nightly'; //For declaring "HEY THIS ISNT FINAL"
+	public static var denpaEngineVersion:String = '0.1.0 Nightly'; //For declaring "HEY THIS ISNT FINAL"
 	#end
 	public static var baseVersion:String = '0.5.2h'; //For those wondering what this engine is based on
 	public static var curSelected:Int = 0;
@@ -219,11 +219,11 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit2:FlxText = new FlxText(12, FlxG.height - #if !html 64 #else 44 #end, 0, "Denpa Engine v" + denpaEngineVersion, 12);
+		var versionShit2:FlxText = new FlxText(12, FlxG.height - #if !html 64 #else 44 #end, 0, "Denpa Engine Foxa Edition v" + denpaEngineVersion, 12);
 		versionShit2.scrollFactor.set();
 		versionShit2.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit2);
-		var versionShit:FlxText = new FlxText(12, FlxG.height - #if !html 44 #else 24 #end, 0, "Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
+		var versionShit:FlxText = new FlxText(12, FlxG.height - #if !html 44 #else 24 #end, 0, "PE v0.5.2h | Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);

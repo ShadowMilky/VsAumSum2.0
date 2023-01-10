@@ -87,11 +87,9 @@ class Main extends Sprite
 		addChild(fpsCounter);
 		toggleFPS(ClientPrefs.showFPS);
 
-		#if debug
 		ramCount = new CustomMEM(10, 16, 0xffffff);
 		addChild(ramCount);
 		toggleMEM(ClientPrefs.showFPS);
-		#end
 
 		#if html5
 		FlxG.autoPause = false;
