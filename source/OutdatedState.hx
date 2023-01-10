@@ -42,14 +42,14 @@ class OutdatedState extends MusicBeatState
 		var bg:FlxSprite = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.WHITE);
 		add(bg);
 
-		bottomLayer = new FlxBackdrop(Paths.image('oscillators/bottom'), 0, 0, true, true, 0, 0);
+		bottomLayer = new FlxBackdrop(Paths.image('oscillators/bottom'), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 		bottomLayer.velocity.set(-12, -5); // Speed (Can Also Be Modified For The Direction Aswell)
 		bottomLayer.antialiasing = ClientPrefs.globalAntialiasing;
 		bottomLayer.scale.set(2,2);
 		bottomLayer.updateHitbox();
 		bottomLayer.blend = BlendMode.MULTIPLY;
 
-		middleLayer = new FlxBackdrop(Paths.image('oscillators/top'), 0, 0, true, true, 0, 0);
+		middleLayer = new FlxBackdrop(Paths.image('oscillators/top'), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 		middleLayer.velocity.set(-5, -12); // Speed (Can Also Be Modified For The Direction Aswell)
 		middleLayer.antialiasing = ClientPrefs.globalAntialiasing;
 		middleLayer.alpha = 0.5;
@@ -57,7 +57,7 @@ class OutdatedState extends MusicBeatState
 		middleLayer.updateHitbox();
 		middleLayer.blend = BlendMode.DIFFERENCE;
 
-		topLayer = new FlxBackdrop(Paths.image('oscillators/verytop'), 0, 0, true, true, 0, 0);
+		topLayer = new FlxBackdrop(Paths.image('oscillators/verytop'), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 		topLayer.velocity.set(-24, -14); // Speed (Can Also Be Modified For The Direction Aswell)
 		topLayer.antialiasing = ClientPrefs.globalAntialiasing;
 		topLayer.alpha = 0;
@@ -65,7 +65,7 @@ class OutdatedState extends MusicBeatState
 		topLayer.updateHitbox();
 		topLayer.blend = BlendMode.ADD;
 
-		clouds = new FlxBackdrop(Paths.image('oscillators/clouds'), 0, 0, true, true, 40, 20);
+		clouds = new FlxBackdrop(Paths.image('oscillators/clouds'), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 		clouds.velocity.set(27, 20); // Speed (Can Also Be Modified For The Direction Aswell)
 		clouds.antialiasing = ClientPrefs.globalAntialiasing;
 		clouds.scale.set(13,13);

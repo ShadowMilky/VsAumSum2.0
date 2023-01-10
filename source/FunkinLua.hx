@@ -1029,7 +1029,7 @@ class FunkinLua {
 		Lua_helper.add_callback(lua, "makeLuaBackdrop", function(tag:String, image:String, scrollX:Float, scrollY:Float, ?repeatX:Bool = true, ?repeatY:Bool = true, ?spaceX:Int = 0, ?spaceY:Int = 0) {
 			tag = tag.replace('.', '');
 			resetSpriteTag(tag);
-			var leSprite:FlxBackdrop = new FlxBackdrop(Paths.image(image), 0, 0, repeatX, repeatY, spaceX, spaceY);
+			var leSprite:FlxBackdrop = new FlxBackdrop(Paths.image(image), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 			leSprite.velocity.set(scrollX, scrollY);
 			leSprite.antialiasing = ClientPrefs.globalAntialiasing;
 			PlayState.instance.modchartBackdrops.set(tag, leSprite);

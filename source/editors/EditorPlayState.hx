@@ -81,13 +81,13 @@ class EditorPlayState extends MusicBeatState
 		add(bg);
 
 		if (!ClientPrefs.lowQuality) {
-			var bgScroll:FlxBackdrop = new FlxBackdrop(Paths.image('menuBGHexL6'), 0, 0, 0);
+			var bgScroll:FlxBackdrop = new FlxBackdrop(Paths.image('menuBGHexL6'), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 			bgScroll.velocity.set(29, 30); // Speed (Can Also Be Modified For The Direction Aswell)
 			bgScroll.antialiasing = ClientPrefs.globalAntialiasing;
 			bgScroll.color = bg.color;
 			add(bgScroll);
 	
-			var bgScroll2:FlxBackdrop = new FlxBackdrop(Paths.image('menuBGHexL6'), 0, 0, 0);
+			var bgScroll2:FlxBackdrop = new FlxBackdrop(Paths.image('menuBGHexL6'), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 			bgScroll2.velocity.set(-29, -30); // Speed (Can Also Be Modified For The Direction Aswell)
 			bgScroll2.antialiasing = ClientPrefs.globalAntialiasing;
 			bgScroll2.color = bg.color;

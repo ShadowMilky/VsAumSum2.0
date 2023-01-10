@@ -64,12 +64,12 @@ class NotesSubState extends MusicBeatSubstate
 		add(bg);
 
 		if (!ClientPrefs.lowQuality) {
-			bgScroll = new FlxBackdrop(Paths.image('menuBGHexL6'), 0, 0, 0);
+			bgScroll = new FlxBackdrop(Paths.image('menuBGHexL6'), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 			bgScroll.velocity.set(29, 30); // Speed (Can Also Be Modified For The Direction Aswell)
 			bgScroll.antialiasing = ClientPrefs.globalAntialiasing;
 			add(bgScroll);
 	
-			bgScroll2 = new FlxBackdrop(Paths.image('menuBGHexL6'), 0, 0, 0);
+			bgScroll2 = new FlxBackdrop(Paths.image('menuBGHexL6'), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 			bgScroll2.velocity.set(-29, -30); // Speed (Can Also Be Modified For The Direction Aswell)
 			bgScroll2.antialiasing = ClientPrefs.globalAntialiasing;
 			add(bgScroll2);
@@ -1458,12 +1458,12 @@ class ControlsSubState extends MusicBeatSubstate {
 		add(bg);
 
 		if (!ClientPrefs.lowQuality) {
-			bgScroll = new FlxBackdrop(Paths.image('menuBGHexL6'), 0, 0, 0);
+			bgScroll = new FlxBackdrop(Paths.image('menuBGHexL6'), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 			bgScroll.velocity.set(29, 30); // Speed (Can Also Be Modified For The Direction Aswell)
 			bgScroll.antialiasing = ClientPrefs.globalAntialiasing;
 			add(bgScroll);
 	
-			bgScroll2 = new FlxBackdrop(Paths.image('menuBGHexL6'), 0, 0, 0);
+			bgScroll2 = new FlxBackdrop(Paths.image('menuBGHexL6'), #if (flixel_addons < "3.0.0") 1, 1, true, true, #else XY, #end 1, 1);
 			bgScroll2.velocity.set(-29, -30); // Speed (Can Also Be Modified For The Direction Aswell)
 			bgScroll2.antialiasing = ClientPrefs.globalAntialiasing;
 			add(bgScroll2);
