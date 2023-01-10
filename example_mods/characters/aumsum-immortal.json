@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				14,
+				53
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "aumsum angey idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-46,
+				-3
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "aumsum angey right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				178,
+				42
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "aumsum angey left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				70,
+				48
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "aumsum angey down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				48,
+				98
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "aumsum angey up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/AumSum_Immortal",
+	"position": [
+		100,
+		300
+	],
+	"healthicon": "aumsum-angey",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		100,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}

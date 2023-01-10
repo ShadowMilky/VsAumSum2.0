@@ -1,1 +1,1 @@
-This is where your .lua files for note types go.
+Add your custom note type's .lua file here

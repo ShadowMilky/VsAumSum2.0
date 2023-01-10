@@ -1,1 +1,1 @@
-This folder is where you should put your .json files for your characters.
+Put your custom character .json files here!

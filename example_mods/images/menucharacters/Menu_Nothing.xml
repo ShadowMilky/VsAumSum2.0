@@ -1,0 +1,3 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Menu_Nothing.png"><SubTexture name="M Nothing idle0000" x="0" y="0" width="5" height="5" frameX="0" frameY="0" frameWidth="5" frameHeight="5" />
+</TextureAtlas>

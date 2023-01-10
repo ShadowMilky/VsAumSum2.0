@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "thunda idle"
+		},
+		{
+			"offsets": [
+				106,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "thunda left"
+		},
+		{
+			"offsets": [
+				30,
+				-126
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "thunda down"
+		},
+		{
+			"offsets": [
+				-16,
+				130
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "thunda up"
+		},
+		{
+			"offsets": [
+				-90,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "thunda right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/aumsum_png_remake",
+	"position": [
+		80,
+		230
+	],
+	"healthicon": "aumsum-thunda",
+	"flip_x": false,
+	"healthbar_colors": [
+		220,
+		216,
+		197
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

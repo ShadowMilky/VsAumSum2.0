@@ -1,1 +1,1 @@
-This is where your character .png and .xml/.txt files go.
+Put your custom character image and .xml/.txt files here!

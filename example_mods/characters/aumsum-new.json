@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				14,
+				53
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "aumsum idle dance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-46,
+				55
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "aumsum right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				62,
+				56
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "aumsum left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-9,
+				9
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "aumsum down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				19,
+				69
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "aumsum up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/AumSum_Remake",
+	"position": [
+		0,
+		280
+	],
+	"healthicon": "aumsum",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		100,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

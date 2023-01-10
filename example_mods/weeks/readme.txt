@@ -1,1 +1,1 @@
-This is where your week .jsons go.
+Drop your custom week .json files here!

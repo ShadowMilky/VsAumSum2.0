@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				14,
+				52
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "aumsum angry idle dance"
+		},
+		{
+			"offsets": [
+				-57,
+				51
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "aumsum angry right"
+		},
+		{
+			"offsets": [
+				-25,
+				53
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "aumsum angry left"
+		},
+		{
+			"offsets": [
+				-69,
+				15
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "aumsum angry down"
+		},
+		{
+			"offsets": [
+				-22,
+				68
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "aumsum angry up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/AumSum_Maddd",
+	"position": [
+		0,
+		280
+	],
+	"healthicon": "aumsum-angry",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		100,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
