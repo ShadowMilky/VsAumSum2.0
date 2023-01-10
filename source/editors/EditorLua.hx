@@ -7,6 +7,8 @@ import llua.State;
 import llua.Convert;
 #end
 
+// i thought this is an editor bruhhhh
+
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
 import flixel.text.FlxText;
