@@ -8,7 +8,7 @@ import openfl.display.Sprite;
 import openfl.events.Event;
 import stats.CustomFPS;
 import stats.CustomFPS.CustomMEM;
-//crash handler stuff
+// crash handler stuff
 #if desktop
 import lime.app.Application;
 import openfl.events.UncaughtErrorEvent;
@@ -21,14 +21,15 @@ using StringTools;
 
 class Main extends Sprite
 {
-	//1280, 720
-	var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
-	var gameHeight:Int = 720; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
+	// 1280, 720
+	var widthGame:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
+	var heightGame:Int = 720; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	var initialState:Class<FlxState> = InitState; // The FlxState the game starts with.
 	var zoom:Float = -1; // If -1, zoom is automatically calculated to fit the window dimensions.
 	var framerate:Int = 60; // How many frames per second the game should run at.
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
+
 	public static var fpsVar:FPS;
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
@@ -69,16 +70,17 @@ class Main extends Sprite
 
 		if (zoom == -1.0)
 		{
-			var ratioX:Float = stageWidth / game.width;
-			var ratioY:Float = stageHeight / game.height;
+			var ratioX:Float = stageWidth / width;
+			var ratioY:Float = stageHeight / height;
 			zoom = Math.min(ratioX, ratioY);
-			width = Math.ceil(stageWidth / game.zoom);
-			height = Math.ceil(stageHeight / game.zoom);
+			widthGame = Math.ceil(stageWidth / zoom);
+			heightGame = Math.ceil(stageHeight / zoom);
 		}
-		addChild(new FlxGame(width, height, initialState, #if (flixel < "5.0.0") zoom, #end framerate, framerate, skipSplash, startFullscreen));
-	
+
+		addChild(new FlxGame(widthGame, heightGame, initialState, #if (flixel < "5.0.0") zoom, #end framerate, framerate, skipSplash, startFullscreen));
+
 		ClientPrefs.loadDefaultKeys();
-		
+
 		#if FLIXEL_STUDIO
 		flixel.addons.studio.FlxStudio.create();
 		#end
@@ -135,7 +137,9 @@ class Main extends Sprite
 			}
 		}
 
-		errMsg += "\nUncaught Error: " + e.error + "\nPlease report this error to the GitHub page: https://github.com/UmbratheUmbreon/PublicDenpaEngine\n\n> Crash Handler written by: sqirra-rng";
+		errMsg += "\nUncaught Error: "
+			+ e.error
+			+ "\nPlease report this error to the GitHub page: https://github.com/UmbratheUmbreon/PublicDenpaEngine\n\n> Crash Handler written by: sqirra-rng";
 
 		if (!FileSystem.exists("./crash/"))
 			FileSystem.createDirectory("./crash/");
@@ -145,8 +149,11 @@ class Main extends Sprite
 		Sys.println(errMsg);
 		Sys.println("Crash dump saved in " + Path.normalize(path));
 
-		var randoms:Array<String> = ['Error!', 'Uh Oh!', 'Wipe Out!', 'Dangit!', 'Shit!', 'I Messed Up!', 'Oops!', 'Ouch!', 'Sorry!', 'God damnit!', 'Try Again!', 'Crash!', 'Ow!', 'That Stinks!', 'Help!', 'Oh Come On!', 'Really?!', 'Ugh!', 'That Was Stupid!'];
-		Application.current.window.alert(errMsg, randoms[FlxG.random.int(0,randoms.length-1)]);
+		var randoms:Array<String> = [
+			'Error!', 'Uh Oh!', 'Wipe Out!', 'Dangit!', 'Shit!', 'I Messed Up!', 'Oops!', 'Ouch!', 'Sorry!', 'God damnit!', 'Try Again!', 'Crash!', 'Ow!',
+			'That Stinks!', 'Help!', 'Oh Come On!', 'Really?!', 'Ugh!', 'That Was Stupid!'
+		];
+		Application.current.window.alert(errMsg, randoms[FlxG.random.int(0, randoms.length - 1)]);
 		DiscordClient.shutdown();
 		Sys.exit(1);
 	}
