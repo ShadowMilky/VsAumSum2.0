@@ -1,68 +1,96 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				14,
 				53
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "aumsum angey idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "aumsum angey idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-46,
 				-3
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "aumsum angey right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "aumsum angey right"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				178,
 				42
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "aumsum angey left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "aumsum angey left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				70,
 				48
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "aumsum angey down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "aumsum angey down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				48,
 				98
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "aumsum angey up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "aumsum angey up"
 		}
 	],
+	"sarvente_floating": false,
+	"healthbar_colors_middle": [
+		235,
+		235,
+		235
+	],
 	"no_antialiasing": false,
+	"healthbar_colors_bottom": [
+		215,
+		215,
+		215
+	],
+	"death_props": {
+		"endSfx": "gameOverEnd",
+		"bpm": 100,
+		"loopSfx": "gameOver",
+		"character": "bf-dead",
+		"startSfx": "fnf_loss_sfx"
+	},
 	"image": "characters/AumSum_Immortal",
+	"trail_length": null,
+	"trail_delay": null,
 	"position": [
 		100,
 		300
 	],
+	"trail_diff": null,
+	"float_speed": null,
+	"trail_alpha": null,
+	"health_drain": false,
 	"healthicon": "aumsum-angey",
+	"shake_screen": false,
+	"orbit": false,
+	"drain_floor": 0.1,
+	"healthbar_count": null,
 	"flip_x": false,
 	"healthbar_colors": [
 		255,
@@ -73,6 +101,10 @@
 		100,
 		0
 	],
+	"float_magnitude": null,
 	"sing_duration": 4,
-	"scale": 0.8
+	"scare_bf": false,
+	"scare_gf": false,
+	"scale": 0.8,
+	"flixel_trail": false
 }
