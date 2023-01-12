@@ -1864,7 +1864,7 @@ class PlayState extends MusicBeatState
 			mirrorSongCard.antialiasing = false;
 			add(mirrorSongCard);
 
-			engineWatermark = new FlxText(12, ClientPrefs.downScroll ? 4 : FlxG.height - 24, 0, "Denpa Engine v" + MainMenuState.denpaEngineVersion);
+			engineWatermark = new FlxText(12, ClientPrefs.downScroll ? 4 : FlxG.height - 24, 0, "AumSum Funkin' v" + MainMenuState.denpaEngineVersion);
 			engineWatermark.scrollFactor.set();
 			engineWatermark.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			engineWatermark.cameras = [camHUD];

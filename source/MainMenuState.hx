@@ -219,7 +219,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
 
-		var versionShit2:FlxText = new FlxText(12, FlxG.height - #if !html 64 #else 44 #end, 0, "Denpa Engine Foxa Edition v" + denpaEngineVersion, 12);
+		var versionShit2:FlxText = new FlxText(12, FlxG.height - #if !html 64 #else 44 #end, 0, "Denpa Engine | AumSum Funkin' v" + denpaEngineVersion, 12);
 		versionShit2.scrollFactor.set();
 		versionShit2.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit2);
