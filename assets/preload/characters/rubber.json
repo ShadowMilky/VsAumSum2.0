@@ -1,0 +1,115 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				0
+			],
+			"loop_point": 0,
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-18,
+				-102
+			],
+			"loop_point": 0,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				69,
+				56
+			],
+			"loop_point": 0,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				56,
+				-20
+			],
+			"loop_point": 0,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-48,
+				-32
+			],
+			"loop_point": 0,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		}
+	],
+	"sarvente_floating": false,
+	"healthbar_colors_middle": [
+		108,
+		0,
+		235
+	],
+	"no_antialiasing": false,
+	"healthbar_colors_bottom": [
+		88,
+		0,
+		215
+	],
+	"death_props": {
+		"character": "bf-dead",
+		"loopSfx": "gameOver",
+		"endSfx": "gameOverEnd",
+		"startSfx": "fnf_loss_sfx",
+		"bpm": 100
+	},
+	"image": "characters/rubber",
+	"trail_length": null,
+	"trail_delay": null,
+	"position": [
+		0,
+		410
+	],
+	"trail_diff": null,
+	"float_speed": null,
+	"trail_alpha": null,
+	"health_drain": false,
+	"healthicon": "rubber",
+	"shake_screen": false,
+	"orbit": false,
+	"drain_floor": 0.1,
+	"healthbar_count": 3,
+	"flip_x": false,
+	"healthbar_colors": [
+		128,
+		0,
+		255
+	],
+	"camera_position": [
+		-110,
+		10
+	],
+	"float_magnitude": null,
+	"sing_duration": 4,
+	"scare_bf": false,
+	"scare_gf": false,
+	"scale": 1.2,
+	"flixel_trail": false
+}

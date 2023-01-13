@@ -1,0 +1,110 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "thunda idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				106,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "thunda left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				-126
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "thunda down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				130
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "thunda up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-90,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "thunda right",
+			"indices": []
+		}
+	],
+	"sarvente_floating": false,
+	"healthbar_colors_middle": [
+		16,
+		16,
+		16
+	],
+	"no_antialiasing": false,
+	"healthbar_colors_bottom": [
+		0,
+		0,
+		0
+	],
+	"death_props": {
+		"endSfx": "gameOverEnd",
+		"bpm": 100,
+		"loopSfx": "gameOver",
+		"character": "bf-dead",
+		"startSfx": "fnf_loss_sfx"
+	},
+	"image": "characters/aumsum_png_remake",
+	"trail_length": null,
+	"trail_delay": null,
+	"position": [
+		80,
+		230
+	],
+	"trail_diff": null,
+	"float_speed": null,
+	"trail_alpha": null,
+	"health_drain": false,
+	"healthicon": "aumsum-thunda",
+	"shake_screen": false,
+	"orbit": false,
+	"drain_floor": 0.1,
+	"healthbar_count": null,
+	"flip_x": false,
+	"healthbar_colors": [
+		36,
+		36,
+		36
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"float_magnitude": null,
+	"sing_duration": 6.1,
+	"scare_bf": false,
+	"scare_gf": false,
+	"scale": 1,
+	"flixel_trail": false
+}

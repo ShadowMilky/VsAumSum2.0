@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Menu_AumSum.png">
+<SubTexture name="M AumSum idle0000" x="0" y="0" width="330" height="598" frameX="0" frameY="0" frameWidth="330" frameHeight="598" />
+<SubTexture name="M AumSum idle0001" x="0" y="0" width="330" height="598" frameX="0" frameY="0" frameWidth="330" frameHeight="598" />
+<SubTexture name="M AumSum idle0002" x="0" y="0" width="330" height="598" frameX="0" frameY="0" frameWidth="330" frameHeight="598" />
+<SubTexture name="M AumSum idle0003" x="330" y="0" width="330" height="598" frameX="0" frameY="0" frameWidth="330" frameHeight="598" />
+<SubTexture name="M AumSum idle0004" x="330" y="0" width="330" height="598" frameX="0" frameY="0" frameWidth="330" frameHeight="598" />
+<SubTexture name="M AumSum idle0005" x="660" y="0" width="330" height="598" frameX="0" frameY="0" frameWidth="330" frameHeight="598" />
+<SubTexture name="M AumSum idle0006" x="990" y="0" width="330" height="598" frameX="0" frameY="0" frameWidth="330" frameHeight="598" />
+<SubTexture name="M AumSum idle0007" x="990" y="0" width="330" height="598" frameX="0" frameY="0" frameWidth="330" frameHeight="598" />
+<SubTexture name="M AumSum idle0008" x="990" y="0" width="330" height="598" frameX="0" frameY="0" frameWidth="330" frameHeight="598" />
+<SubTexture name="M AumSum idle0009" x="990" y="0" width="330" height="598" frameX="0" frameY="0" frameWidth="330" frameHeight="598" />
+</TextureAtlas>

@@ -1,0 +1,11 @@
+{
+	"idle_anim": "Menu AumSum Idle",
+	"image": "Menu_AumSum_New",
+	"position": [
+		140,
+		90
+	],
+	"flipX": false,
+	"scale": 0.7,
+	"confirm_anim": "M Dad Idle"
+}
