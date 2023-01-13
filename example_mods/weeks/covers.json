@@ -1,0 +1,50 @@
+{
+	"storyName": "Covers ft. AumSum and The Narrator",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "covers",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Warmup",
+			"aumsum",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Rano",
+			"aumsum",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Glitch",
+			"aumsum-narrator-new",
+			[
+				255,
+				195,
+				0
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Cover Week"
+}
