@@ -45,8 +45,10 @@ import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 import openfl.filters.BitmapFilter;
 import openfl.geom.Rectangle;
+#if desktop
 import editors.ChartingState;
 import editors.CharacterEditorState;
+#end
 import flixel.group.FlxSpriteGroup;
 import flixel.input.keyboard.FlxKey;
 import openfl.events.KeyboardEvent;
@@ -4512,15 +4514,15 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		#if desktop
 		if (FlxG.keys.anyJustPressed(debugKeysCharacter) && !endingSong && !inCutscene) {
 			persistentUpdate = false;
 			paused = true;
 			cancelMusicFadeTween();
-			#if desktop
 			discordUpdateTimer.cancel();
-			#end
 			MusicBeatState.switchState(new CharacterEditorState(SONG.assets.player2));
 		}
+		#end
 
 		if (startedCountdown)
 		{

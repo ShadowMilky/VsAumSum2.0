@@ -533,7 +533,7 @@ class DenpaState extends MusicBeatState
 		#if desktop
 		Application.current.window.borderless = false;
 		#end
-		Application.current.window.title = "Friday Night Funkin': Denpa Engine";
+		Application.current.window.title = "AumSum Funkin' ";
 	}
 
 	public function onKeyPress(event:KeyboardEvent):Void

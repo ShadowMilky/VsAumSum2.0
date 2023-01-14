@@ -1,8 +1,8 @@
 package editors;
 
 #if desktop
+
 import Discord.DiscordClient;
-#end
 import flixel.FlxSprite;
 import flixel.addons.display.FlxGridOverlay;
 import flixel.addons.display.FlxBackdrop;
@@ -211,3 +211,5 @@ class MasterEditorMenu extends MusicBeatState
 	}
 	#end
 }
+
+#end
