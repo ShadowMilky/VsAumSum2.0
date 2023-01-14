@@ -139,11 +139,6 @@ class TitleState extends MusicBeatState
 		//lmao
 		ngSprJSON = Json.parse(Paths.getTextFromFile('images/title/newgroundsSprite.json'));
 
-		#if FREEPLAY
-		MusicBeatState.switchState(new FreeplayState());
-		#elseif CHARTING
-		MusicBeatState.switchState(new ChartingState());
-		#else
 		if(FlxG.save.data.flashing == null && !FlashingState.leftState) {
 			FlxTransitionableState.skipNextTransIn = true;
 			FlxTransitionableState.skipNextTransOut = true;
@@ -164,7 +159,6 @@ class TitleState extends MusicBeatState
 				startIntro();
 			});
 		}
-		#end
 	}
 
 	var logoBl:FlxSprite;

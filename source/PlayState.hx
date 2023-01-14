@@ -4420,10 +4420,12 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		#if desktop
 		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
 		{
 			openChartEditor();
 		}
+		#end
 
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
@@ -4811,6 +4813,7 @@ class PlayState extends MusicBeatState
 		hscript.call("onUpdatePost", [elapsed]);
 	}
 
+	#if desktop
 	public function openChartEditor()
 	{
 		persistentUpdate = false;
@@ -4824,6 +4827,7 @@ class PlayState extends MusicBeatState
 		DiscordClient.changePresence("Chart Editor", null, null, false);
 		#end
 	}
+	#end
 
 	public var isDead:Bool = false; //Don't mess with this on Lua!!!
 	public function doDeathCheck(?skipHealthCheck:Bool = false) {
@@ -6013,7 +6017,9 @@ class PlayState extends MusicBeatState
 
 			if (chartingMode)
 			{
+				#if desktop
 				openChartEditor();
+				#end
 				return;
 			}
 

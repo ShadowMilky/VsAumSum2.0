@@ -355,10 +355,12 @@ class Note extends FlxSprite
 		if(animName != null)
 			animation.play(animName, true);
 
+		#if desktop
 		if(inEditor) {
 			setGraphicSize(ChartingState.GRID_SIZE, ChartingState.GRID_SIZE);
 			updateHitbox();
 		}
+		#end
 	}
 
 	function loadNoteAnims() {

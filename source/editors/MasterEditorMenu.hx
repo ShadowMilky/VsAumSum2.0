@@ -135,6 +135,7 @@ class MasterEditorMenu extends MusicBeatState
 		if (controls.ACCEPT || (FlxG.mouse.justPressed && ClientPrefs.mouseControls))
 		{
 			switch(options[curSelected]) {
+				#if desktop
 				case 'Character Editor':
 					LoadingState.loadAndSwitchState(new CharacterEditorState(Character.DEFAULT_CHARACTER, false));
 				case 'Week Editor':
@@ -150,6 +151,7 @@ class MasterEditorMenu extends MusicBeatState
 					LoadingState.loadAndSwitchState(new ChartingState(), false);
 				case 'Stage Editor':
 					LoadingState.loadAndSwitchState(new StageEditorState(), false);
+				#end
 			}
 			FlxG.sound.music.volume = 0;
 			#if PRELOAD_ALL

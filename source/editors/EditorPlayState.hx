@@ -334,9 +334,11 @@ class EditorPlayState extends MusicBeatState
 	override function update(elapsed:Float) {
 		if (FlxG.keys.justPressed.ESCAPE)
 		{
+			#if desktop
 			FlxG.sound.music.pause();
 			vocals.pause();
 			LoadingState.loadAndSwitchState(new editors.ChartingState());
+			#end
 		}
 
 		if (startingSong) {
