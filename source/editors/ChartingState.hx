@@ -3,6 +3,7 @@ package editors;
 #if desktop
 import Discord.DiscordClient;
 #end
+
 import Conductor.BPMChangeEvent;
 import flixel.FlxSprite;
 import flixel.FlxObject;
@@ -2391,7 +2392,7 @@ class ChartingState extends MusicBeatState
 				}
 			}
 			
-			
+			#if desktop
 			if (FlxG.keys.pressed.CONTROL && (FlxG.keys.justPressed.BACKSPACE)) {
 				openSubState(new Prompt('This action will clear unsaved progress.\n\nProceed?', 0, function()
 				{
@@ -2405,6 +2406,7 @@ class ChartingState extends MusicBeatState
 					return;
 				},ignoreWarnings));
 			}
+			#end
 
 			if (!FlxG.keys.pressed.CONTROL && (FlxG.keys.justPressed.BACKSPACE)) {
 				openSubState(new Prompt('This action will clear unsaved progress.\n\nProceed?', 0, function()
@@ -3766,9 +3768,11 @@ class ChartingState extends MusicBeatState
 	}
 
 	function convPathShit(path:String):String {
+		#if desktop
 		path = Path.normalize(Sys.getCwd() + path);
 		#if windows
 		path = path.replace("/", "\\");
+		#end
 		#end
 		return path;
 	}
