@@ -91,7 +91,11 @@ class InitState extends MusicBeatState
 		if(transfer == null) {
 			FlxTransitionableState.skipNextTransIn = true;
 			FlxTransitionableState.skipNextTransOut = true;
+			#if desktop
 			MusicBeatState.switchState(new DenpaState());
+			#else
+			MusicBeatState.switchState(new TitleState());
+			#end
 		}
 	}
 }
