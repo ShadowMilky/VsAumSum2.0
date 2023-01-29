@@ -3,14 +3,18 @@
 	"difficulties": "",
 	"hideFreeplay": false,
 	"weekBackground": "covers",
-	"weekBefore": "tutorial",
 	"freeplayColor": [
 		146,
 		113,
 		253
 	],
+	"weekBefore": "tutorial",
 	"startUnlocked": true,
-	"hideStoryMode": false,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
 	"songs": [
 		[
 			"Warmup",
@@ -38,13 +42,18 @@
 				195,
 				0
 			]
+		],
+		[
+			"CORRUPTED-FILE",
+			"aumsum-new",
+			[
+				255,
+				255,
+				255
+			]
 		]
 	],
-	"weekCharacters": [
-		"",
-		"",
-		""
-	],
-	"hiddenUntilUnlocked": false,
-	"weekName": "Cover Week"
+	"hideStoryMode": false,
+	"weekName": "Cover Week",
+	"hiddenUntilUnlocked": false
 }
