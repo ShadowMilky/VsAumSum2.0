@@ -373,7 +373,7 @@ class Paths
 		#end
 
 		var path = getPath('images/$key.png', IMAGE, library);
-		var quartiz = getPath('images/quartiz.png', IMAGE, library);
+		var quartiz = getPath('images/blunt.png', IMAGE, library);
 		if (OpenFlAssets.exists(path, IMAGE)) {
 			if(!currentTrackedAssets.exists(path)) {
 				var newGraphic:FlxGraphic = FlxG.bitmap.add(path, false, path);
@@ -383,7 +383,7 @@ class Paths
 			localTrackedAssets.push(path);
 			return currentTrackedAssets.get(path);
 		}
-		trace('oh no its returning null NOOOO: ' + 'images/$key.png' + ' REPLACING WITH QUARTIZ!');
+		trace('oh no its returning null NOOOO: ' + 'images/$key.png' + ' REPLACING WITH THE BLUNT!');
 		if (OpenFlAssets.exists(quartiz, IMAGE)) {
 			if(!currentTrackedAssets.exists(quartiz)) {
 				var newGraphic:FlxGraphic = FlxG.bitmap.add(quartiz, false, quartiz);
@@ -393,7 +393,7 @@ class Paths
 			localTrackedAssets.push(quartiz);
 			return currentTrackedAssets.get(quartiz);
 		}
-		trace('OH GOD QUARTIZ IS GONE, HAXEFLIXEL LOGO, GO!');
+		trace('OH GOD THE BLUNT IS GONE, HAXEFLIXEL LOGO, GO!');
 		return null;
 	}
 
