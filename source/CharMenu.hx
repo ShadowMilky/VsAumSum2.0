@@ -72,7 +72,7 @@ class CharMenu extends MusicBeatState
 		if (unlockedCharacters == null)
 		{
 			unlockedCharacters = selectableCharacters;
-			unlockedCharacters[0] = PlayState.SONG.player1;
+			unlockedCharacters[0] = PlayState.SONG.assets.player1;
 		}
 		// If names are empty, fill it with defaults
 		if (unlockedCharactersNames == null)
@@ -85,7 +85,7 @@ class CharMenu extends MusicBeatState
 			unlockedCharactersBGs = selectableCharactersBGs;
 		}
 
-		unlockedCharacters[0] = PlayState.SONG.player1;
+		unlockedCharacters[0] = PlayState.SONG.assets.player1;
 
 		unlockedCharsCheck();
 
@@ -207,8 +207,8 @@ class CharMenu extends MusicBeatState
 			{
 				alreadySelected = true;
 				var daSelected:String = unlockedCharacters[curSelected];
-				if (unlockedCharacters[curSelected] != PlayState.SONG.player1)
-					PlayState.SONG.player1 = daSelected;
+				if (unlockedCharacters[curSelected] != PlayState.SONG.assets.player1)
+					PlayState.SONG.assets.player1 = daSelected;
 
 				FlxFlicker.flicker(imageArray[curSelected], 0);
 
@@ -361,7 +361,7 @@ class CharMenu extends MusicBeatState
 
 		// Ensures the characters are reset and that the first one is the default character
 		unlockedCharacters = selectableCharacters;
-		unlockedCharacters[0] = PlayState.SONG.player1;
+		unlockedCharacters[0] = PlayState.SONG.assets.player1;
 
 		// Grabs default character names
 		unlockedCharactersNames = selectableCharactersNames;
