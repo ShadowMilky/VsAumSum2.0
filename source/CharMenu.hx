@@ -27,9 +27,9 @@ import lime.utils.Assets;
 class CharMenu extends MusicBeatState
 {
 	// Selectable Character Variables
-	var selectableCharacters:Array<String> = ['bf', 'bf-christmas', 'pico-player']; // Currently Selectable characters
-	var selectableCharactersNames:Array<String> = ['Boyfriend', 'Boyfriend but Christmas', 'Pico']; // Characters names
-	var selectableCharactersBGs:Array<String> = ['BG2', 'BG2', 'BG1']; // Characters backgrounds, 4 are included by default
+	var selectableCharacters:Array<String> = ['bf', 'bf-christmas', 'pico-player', 'rubber']; // Currently Selectable characters
+	var selectableCharactersNames:Array<String> = ['Boyfriend', 'Boyfriend but Christmas', 'Pico', 'CannedSoup']; // Characters names
+	var selectableCharactersBGs:Array<String> = ['BG2', 'BG2', 'BG1', 'BG1']; // Characters backgrounds, 4 are included by default
 
 	// Unlockable characters
 	var unlockableChars:Array<String> = ['aumsum-newer', 'aumbruh', 'aumxpunged']; // Unlockable Characters
@@ -89,6 +89,8 @@ class CharMenu extends MusicBeatState
 
 		unlockedCharsCheck();
 
+        FlxG.sound.playMusic(Paths.music('aumsumCharSelect'), 0);
+
 		// Making sure the background is added first to be in the back and then adding the character names and character images afterwords
 		menuBG = new FlxSprite().loadGraphic(Paths.image(unlockedCharactersBGs[curSelected], 'shared'));
 		menuBG.setGraphicSize(Std.int(menuBG.width * 1.1));
@@ -112,7 +114,7 @@ class CharMenu extends MusicBeatState
 		}
 
 		// Character select text at the top of the screen
-		var selectionHeader:Alphabet = new Alphabet(0, 50, 'Character Select', true);
+		var selectionHeader:Alphabet = new Alphabet(0, 50, 'Select Character', true);
 		selectionHeader.screenCenter(X);
 		add(selectionHeader);
 
@@ -129,7 +131,7 @@ class CharMenu extends MusicBeatState
 		// Not centered Correctly, need to figure out how to do that
 		// New Animated Arrows
 		newArrows = new FlxSprite();
-		newArrows.frames = Paths.getSparrowAtlas('newArrows', 'shared');
+		newArrows.frames = Paths.getSparrowAtlas('charMenu/newArrows', 'shared');
 		newArrows.animation.addByPrefix('idle', 'static', 24, false);
 		newArrows.animation.addByPrefix('left', 'leftPress', 24, false);
 		newArrows.animation.addByPrefix('right', 'rightPress', 24, false);
@@ -140,7 +142,7 @@ class CharMenu extends MusicBeatState
 
 		// The currently selected character's name top right
 		selectedCharName = new FlxText(FlxG.width * 0.7, 10, 0, "", 32);
-		selectedCharName.setFormat(fontFolder + 'vcr.ttf', 32, FlxColor.WHITE, RIGHT);
+		selectedCharName.setFormat(fontFolder + 'segoeprb.ttf', 32, FlxColor.WHITE, RIGHT);
 		selectedCharName.alpha = 0.7;
 		add(selectedCharName);
 
@@ -299,16 +301,16 @@ class CharMenu extends MusicBeatState
 
 		menuBG.loadGraphic(Paths.image(unlockedCharactersBGs[curSelected], 'shared'));
 
-		var barBG:FlxSprite = new FlxSprite(0, FlxG.height * 0.9).loadGraphic(Paths.image('healthBar', sharedFolder));
+		var barBG:FlxSprite = new FlxSprite(0, FlxG.height * 0.9).loadGraphic(Paths.image('healthBar', 'shared'));
 		barBG.screenCenter(X);
 		barBG.scrollFactor.set();
-		barBG.visible = false;
+		barBG.visible = true;
 		add(barBG);
 
 		var bar:FlxBar = new FlxBar(barBG.x + 4, barBG.y + 4, RIGHT_TO_LEFT, Std.int(barBG.width - 8), Std.int(barBG.height - 8), this, 'health', 0, 2);
 		bar.scrollFactor.set();
 		bar.createFilledBar(0xFFFF0000, 0xFF66FF33);
-		bar.visible = false;
+		bar.visible = true;
 		add(bar);
 
 		icon = new HealthIcon(unlockedCharacters[curSelected], true);

@@ -263,7 +263,7 @@ class PauseSubState extends MusicBeatSubstate
 						trace(poop + '.json does not exist!');
 						FlxG.sound.play(Paths.sound('invalidJSON'));
 						FlxG.camera.shake(0.05, 0.05);
-						var funnyText = new FlxText(12, FlxG.height - 24, 0, "Invalid JSON!");
+						var funnyText = new FlxText(12, FlxG.height - 24, 0, "Bitch.");
 						funnyText.scrollFactor.set();
 						funnyText.screenCenter();
 						funnyText.x = FlxG.width/2 - 250;
@@ -326,7 +326,7 @@ class PauseSubState extends MusicBeatSubstate
 								MusicBeatState.switchState(new FreeplayState());
 							}
 							FlxG.sound.playMusic(Paths.music('freakyMenu'));
-							Conductor.changeBPM(100);
+							Conductor.changeBPM(102);
 							PlayState.changedDifficulty = false;
 							PlayState.chartingMode = false;
 							PlayState.tankmanRainbow = false;
@@ -336,7 +336,7 @@ class PauseSubState extends MusicBeatSubstate
 							PlayState.seenCutscene = false;
 							MusicBeatState.switchState(new MainMenuState());
 							FlxG.sound.playMusic(Paths.music('freakyMenu'));
-							Conductor.changeBPM(100);
+							Conductor.changeBPM(102);
 							PlayState.changedDifficulty = false;
 							PlayState.chartingMode = false;
 							PlayState.tankmanRainbow = false;
