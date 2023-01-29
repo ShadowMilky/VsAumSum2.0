@@ -182,7 +182,7 @@ class TitleState extends MusicBeatState
 			}
 		}
 
-		Conductor.changeBPM(100);
+		Conductor.changeBPM(102);
 		persistentUpdate = true;
 
 		var bg:FlxSprite = new FlxSprite();
@@ -581,7 +581,7 @@ class TitleState extends MusicBeatState
 						deleteCoolText();
 						ngSpr.visible = false;
 					case 9:
-						Conductor.changeBPM(150);
+						Conductor.changeBPM(152);
 						createCoolText([curWacky[0]]);
 					case 10:
 						addMoreText(curWacky[1]);
@@ -595,7 +595,7 @@ class TitleState extends MusicBeatState
 					case 14:
 						zoomies = 1.13;
 						deleteCoolText();
-						Conductor.changeBPM(300);
+						Conductor.changeBPM(302);
 					case 17:
 						addMoreText('Drop');
 					case 18:
@@ -619,7 +619,7 @@ class TitleState extends MusicBeatState
 					case 27:
 						addMoreText('The');
 					case 28:
-						Conductor.changeBPM(100);
+						Conductor.changeBPM(102);
 						zoomies = 1.025;
 						deleteCoolText();
 						skipIntro();
@@ -635,7 +635,7 @@ class TitleState extends MusicBeatState
 		if (!skippedIntro)
 		{
 			zoomies = 1.025;
-			if (!SoundTestState.isPlaying) Conductor.changeBPM(100);
+			if (!SoundTestState.isPlaying) Conductor.changeBPM(102);
 			remove(ngSpr);
 			remove(credGroup);
 			#if DENPA_WATERMARKS

@@ -252,8 +252,6 @@ class MainMenuState extends MusicBeatState
 		seenTween = true;
 		}
 
-		//Conductor.changeBPM(100);
-
 		bg.color = SoundTestState.getDaColor();
 		if (!ClientPrefs.lowQuality) {
 			bgScroll.color = SoundTestState.getDaColor();
