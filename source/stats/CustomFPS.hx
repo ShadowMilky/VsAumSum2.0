@@ -43,7 +43,7 @@ class CustomFPS extends TextField
 		currentFPS = 0;
 		selectable = false;
 		mouseEnabled = false;
-		defaultTextFormat = new TextFormat("VCR OSD Mono", 12, color);
+		defaultTextFormat = new TextFormat("Segoe Print Bold", 12, color);
 		text = "FPS: ";
 
 		cacheCount = 0;
@@ -102,7 +102,7 @@ class CustomMEM extends TextField
 
 		selectable = false;
 
-		defaultTextFormat = new TextFormat("VCR OSD Mono", 12, inCol);
+		defaultTextFormat = new TextFormat("Segoe Print Bold", 12, inCol);
 
 		text = "";
 

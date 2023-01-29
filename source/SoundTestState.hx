@@ -122,12 +122,12 @@ class SoundTestState extends MusicBeatState
 
 		diskTxt = new FlxText(albumCover.x + 240, albumCover.y, 0, "Album: " + diskName);
 		diskTxt.scrollFactor.set();
-		diskTxt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
+		diskTxt.setFormat("Segoe Print Bold", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
 		add(diskTxt);
 
 		trackTxt = new FlxText(albumCover.x + 240, albumCover.y + 44, 0, "Track: " + trackName);
 		trackTxt.scrollFactor.set();
-		trackTxt.setFormat("VCR OSD Mono", 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
+		trackTxt.setFormat("Segoe Print Bold", 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
 		add(trackTxt);
 
 		camFollow = new FlxObject(0, 0, 1, 1);

@@ -934,9 +934,9 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 
 		shouldZoom = ClientPrefs.camZooms;
 
-		floatyTxt = new FlxText(FlxG.width, FlxG.height/2 - 100, 0, "Denpa Engine v" + MainMenuState.denpaEngineVersion);
+		floatyTxt = new FlxText(FlxG.width, FlxG.height/2 - 100, 0, "AumSum Funkin' | Denpa Engine v" + MainMenuState.denpaEngineVersion);
 		floatyTxt.scrollFactor.set();
-		floatyTxt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		floatyTxt.setFormat("Segoe Print Bold", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		floatyTxt.visible = false;
 		floatyTxt.x -= floatyTxt.width*1.1;
 		add(floatyTxt);

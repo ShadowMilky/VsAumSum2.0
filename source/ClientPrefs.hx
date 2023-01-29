@@ -34,7 +34,7 @@ class ClientPrefs {
 	public static var timeBarRGB:Array<Int> = [255, 255, 255];
 	public static var uiSkin:String = 'FNF';
 	public static var iconSwing:String = 'Stretch';
-	public static var scoreDisplay:String = 'Psych';
+	public static var scoreDisplay:String = 'Sarvente';
 	public static var crossFadeMode:String = 'Mid-Fight Masses';
 	public static var ghostTapping:Bool = true;
 	public static var timeBarType:String = 'Time Left';

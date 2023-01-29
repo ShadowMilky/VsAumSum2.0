@@ -221,16 +221,16 @@ class MainMenuState extends MusicBeatState
 
 		var versionShit2:FlxText = new FlxText(12, FlxG.height - #if !html 64 #else 44 #end, 0, "Denpa Engine | AumSum Funkin' v" + denpaEngineVersion, 12);
 		versionShit2.scrollFactor.set();
-		versionShit2.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		versionShit2.setFormat("Segoe Print Bold", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit2);
 		var versionShit:FlxText = new FlxText(12, FlxG.height - #if !html 44 #else 24 #end, 0, "PE v0.5.2h | Friday Night Funkin' v" + Application.current.meta.get('version'), 12);
 		versionShit.scrollFactor.set();
-		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		versionShit.setFormat("Segoe Print Bold", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(versionShit);
 		#if !html
 		var prompt:FlxText = new FlxText(12, FlxG.height - 24, 0, "Press RESET to Clear Save Data", 12);
 		prompt.scrollFactor.set();
-		prompt.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		prompt.setFormat("Segoe Print Bold", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		add(prompt);
 		#end
 
@@ -368,7 +368,7 @@ class MainMenuState extends MusicBeatState
 				funnyText.screenCenter();
 				funnyText.x = FlxG.width/2 - 250;
 				funnyText.y = FlxG.height/2 - 64;
-				funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 				add(funnyText);
 				FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 					onComplete: function(tween:FlxTween)

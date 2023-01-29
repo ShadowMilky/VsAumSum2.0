@@ -65,6 +65,8 @@ class FreeplayState extends MusicBeatState
 
 	var section:String = '';
 
+	var choosingChar:Bool = false;
+
 	override function create()
 	{
 		Paths.clearStoredMemory();
@@ -530,7 +532,7 @@ class FreeplayState extends MusicBeatState
 					funnyText.screenCenter();
 					funnyText.x = FlxG.width / 2 - 250;
 					funnyText.y = FlxG.height / 2 - 64;
-					funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+					funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 					add(funnyText);
 					FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 						onComplete: function(tween:FlxTween)
@@ -584,7 +586,7 @@ class FreeplayState extends MusicBeatState
 					funnyText.screenCenter();
 					funnyText.x = FlxG.width / 2 - 250;
 					funnyText.y = FlxG.height / 2 - 64;
-					funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+					funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 					add(funnyText);
 					FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 						onComplete: function(tween:FlxTween)
@@ -637,8 +639,15 @@ class FreeplayState extends MusicBeatState
 				}
 				else
 				{
-					LoadingState.globeTrans = false;
-					LoadingState.loadAndSwitchState(new PlayState());
+					if (FlxG.keys.pressed.ALT)
+					{
+						LoadingState.globeTrans = false;
+						LoadingState.loadAndSwitchState(new CharMenu());
+					} else
+					{
+						LoadingState.globeTrans = false;
+						LoadingState.loadAndSwitchState(new PlayState());
+					}
 				}
 
 				FlxG.sound.music.volume = 0;
@@ -650,12 +659,12 @@ class FreeplayState extends MusicBeatState
 				trace(poop + '.json does not exist!');
 				FlxG.sound.play(Paths.sound('invalidJSON'));
 				FlxG.camera.shake(0.05, 0.05);
-				var funnyText = new FlxText(12, FlxG.height - 24, 0, "Invalid JSON!");
+				var funnyText = new FlxText(12, FlxG.height - 24, 0, "The song doesn't exist, bitch.");
 				funnyText.scrollFactor.set();
 				funnyText.screenCenter();
 				funnyText.x = FlxG.width / 2 - 250;
 				funnyText.y = FlxG.height / 2 - 64;
-				funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 				add(funnyText);
 				FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 					onComplete: function(tween:FlxTween)
@@ -709,7 +718,7 @@ class FreeplayState extends MusicBeatState
 				funnyText.screenCenter();
 				funnyText.x = FlxG.width / 2 - 250;
 				funnyText.y = FlxG.height / 2 - 64;
-				funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+				funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 				add(funnyText);
 				FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 					onComplete: function(tween:FlxTween)

@@ -118,6 +118,7 @@ class ChartingState extends MusicBeatState
 		['Tween Camera Zoom', "Tweens the Camera's zoom.\nValue 1: The Zoom to tween to.\nValue 2: The amount of time to tween."],
 		['Tween Hud Angle', "Tweens the Hud's angle.\nValue 1: The Angle to tween to.\nValue 2: The amount of time to tween."],
 		['Tween Hud Zoom', "Tweens the Hud's zoom.\nValue 1: The Zoom to tween to.\nValue 2: The amount of time to tween."],
+		['Unlock Character', 'Value 1: Number of character to unlock (Start at 1)\nValue 2: True or False'],
 		['Tween Note Direction', "Tweens the direction the notes scroll.\nValue 1: The Direction to tween to.\nValue 2: The amount of time to tween."]
 	];
 
@@ -3669,12 +3670,12 @@ class ChartingState extends MusicBeatState
 			trace(poop + '.json does not exist!');
 			FlxG.sound.play(Paths.sound('invalidJSON'));
 			FlxG.camera.shake(0.05, 0.05);
-			var funnyText = new FlxText(12, FlxG.height - 24, 0, "Invalid JSON!");
+			var funnyText = new FlxText(12, FlxG.height - 24, 0, "Put the JSON in the folder, idiot.");
 			funnyText.scrollFactor.set();
 			funnyText.screenCenter();
 			funnyText.x = FlxG.width/2 - 250;
 			funnyText.y = FlxG.height/2 - 64;
-			funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			add(funnyText);
 			FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 				onComplete: function(tween:FlxTween)
@@ -3706,7 +3707,7 @@ class ChartingState extends MusicBeatState
 			funnyText.screenCenter();
 			funnyText.x = FlxG.width/2 - 250;
 			funnyText.y = FlxG.height/2 - 64;
-			funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			add(funnyText);
 			FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 				onComplete: function(tween:FlxTween)

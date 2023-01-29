@@ -268,7 +268,7 @@ class PauseSubState extends MusicBeatSubstate
 						funnyText.screenCenter();
 						funnyText.x = FlxG.width/2 - 250;
 						funnyText.y = FlxG.height/2 - 64;
-						funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+						funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 						add(funnyText);
 						FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 							onComplete: function(tween:FlxTween)
@@ -294,7 +294,7 @@ class PauseSubState extends MusicBeatSubstate
 						funnyText.screenCenter();
 						funnyText.x = FlxG.width/2 - 250;
 						funnyText.y = FlxG.height/2 - 64;
-						funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+						funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 						add(funnyText);
 						FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 							onComplete: function(tween:FlxTween)

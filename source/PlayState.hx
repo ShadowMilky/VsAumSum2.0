@@ -1837,7 +1837,7 @@ class PlayState extends MusicBeatState
 		if (ClientPrefs.ratingsDisplay) {
 			ratingsTxt = new FlxText(12, (FlxG.height/2)-84, 0, "Perfects:"+perfects+"\nSicks:"+sicks+"\nGoods:"+goods+"\nBads:"+bads+"\nShits:"+shits+"\nWTFs:"+wtfs+"\nCombo Breaks:"+songMisses);
 			ratingsTxt.scrollFactor.set();
-			ratingsTxt.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			ratingsTxt.setFormat("Segoe Print Bold", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			ratingsTxt.cameras = [camHUD];
 			add(ratingsTxt);
 		}
@@ -1868,18 +1868,18 @@ class PlayState extends MusicBeatState
 
 			engineWatermark = new FlxText(12, ClientPrefs.downScroll ? 4 : FlxG.height - 24, 0, "AumSum Funkin' v" + MainMenuState.denpaEngineVersion);
 			engineWatermark.scrollFactor.set();
-			engineWatermark.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			engineWatermark.setFormat("Segoe Print Bold", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			engineWatermark.cameras = [camHUD];
 			add(engineWatermark);
 			screwYou = new FlxText(12, ClientPrefs.downScroll ? 24 : FlxG.height - 44, 0, "Ghost Tapping is forced off!");
 			screwYou.scrollFactor.set();
-			screwYou.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			screwYou.setFormat("Segoe Print Bold", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			screwYou.cameras = [camHUD];
 			screwYou.visible = !SONG.options.allowGhostTapping;
 			add(screwYou);
 			noBotplay = new FlxText(12, ClientPrefs.downScroll ? 44 : FlxG.height - 64, 0, "Botplay is forced off!");
 			noBotplay.scrollFactor.set();
-			noBotplay.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+			noBotplay.setFormat("Segoe Print Bold", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 			noBotplay.cameras = [camHUD];
 			noBotplay.visible = !SONG.options.allowBot;
 			if (screwYou.visible == false) {
@@ -1890,12 +1890,12 @@ class PlayState extends MusicBeatState
 			add(noBotplay);
 			songCreditsTxt = new FlxText(songCard.x, songCard.y + 20, 0, "");
 			songCreditsTxt.scrollFactor.set();
-			songCreditsTxt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
+			songCreditsTxt.setFormat("Segoe Print Bold", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
 			songCreditsTxt.cameras = [camHUD];
 			add(songCreditsTxt);
 			remixCreditsTxt = new FlxText(songCard.x, songCreditsTxt.y + 40, 0, "");
 			remixCreditsTxt.scrollFactor.set();
-			remixCreditsTxt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
+			remixCreditsTxt.setFormat("Segoe Print Bold", 32, FlxColor.WHITE, LEFT, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
 			remixCreditsTxt.cameras = [camHUD];
 			add(remixCreditsTxt);
 
@@ -1907,7 +1907,7 @@ class PlayState extends MusicBeatState
 			{
 				var txt:FlxText = new FlxText(songCard.x + 2*i, (songCreditsTxt.y - 64) + 2*i, 0, "");
 				txt.scrollFactor.set();
-				txt.setFormat("VCR OSD Mono", 48, FlxColor.fromRGB(dad.healthColorArray[0] + fuck*2, dad.healthColorArray[1] + fuck*2, dad.healthColorArray[2] + fuck*2), LEFT, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
+				txt.setFormat("Segoe Print Bold", 48, FlxColor.fromRGB(dad.healthColorArray[0] + fuck*2, dad.healthColorArray[1] + fuck*2, dad.healthColorArray[2] + fuck*2), LEFT, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
 				txt.cameras = [camHUD];
 				txt.text = SONG.header.song;
 				grpSongNameTxt.add(txt);
@@ -1954,7 +1954,7 @@ class PlayState extends MusicBeatState
 		msTxt = new FlxText(0, 0, 0, "");
 		msTxt.cameras = [camHUD];
 		msTxt.scrollFactor.set();
-		msTxt.setFormat("VCR OSD Mono", 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		msTxt.setFormat("Segoe Print Bold", 20, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		msTxt.visible = (!ClientPrefs.hideHud && ClientPrefs.msPopup);
 		msTxt.x = 408 + 250;
 		msTxt.y = 290 - 25;
@@ -4935,9 +4935,17 @@ class PlayState extends MusicBeatState
 
 			case 'Set GF Speed':
 				var value:Int = Std.parseInt(value1);
-				if(Math.isNaN(value) || value < 1) value = 1;
+				if (Math.isNaN(value) || value < 1)
+					value = 1;
 				gfSpeed = value;
-			
+			case 'Unlock Character':
+				var val1:Null<Int> = Std.parseInt(value1);
+				if (val1 == null)
+					val1 = 1;
+
+				var val2:Bool = (value2.toLowerCase() == 'true' || value2.toLowerCase() == '1' || value2.toLowerCase() == 'yes' || value2.toLowerCase() == 'unlock');
+
+				FlxG.save.data.daUnlockedChars[val1 - 1] = val2;
 			case 'Philly Glow':
 				var lightId:Int = Std.parseInt(value1);
 				var colorInt:Int = Std.parseInt(value2);

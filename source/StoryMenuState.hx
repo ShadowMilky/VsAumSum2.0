@@ -62,10 +62,10 @@ class StoryMenuState extends MusicBeatState
 		persistentUpdate = persistentDraw = true;
 
 		scoreText = new FlxText(10, 10, 0, "SCORE: 49324858", 36);
-		scoreText.setFormat("VCR OSD Mono", 32);
+		scoreText.setFormat("Segoe Print Bold", 32);
 
 		txtWeekTitle = new FlxText(FlxG.width * 0.7, 10, 0, "", 32);
-		txtWeekTitle.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, RIGHT);
+		txtWeekTitle.setFormat("Segoe Print Bold", 32, FlxColor.WHITE, RIGHT);
 		txtWeekTitle.alpha = 0.7;
 
 		var rankText:FlxText = new FlxText(0, 10);
@@ -195,7 +195,7 @@ class StoryMenuState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
-		// scoreText.setFormat('VCR OSD Mono', 32);
+		// scoreText.setFormat('Segoe Print Bold', 32);
 		lerpScore = Math.floor(FlxMath.lerp(lerpScore, intendedScore, CoolUtil.boundTo(elapsed * 30, 0, 1)));
 		if(Math.abs(intendedScore - lerpScore) < 10) lerpScore = intendedScore;
 
@@ -279,7 +279,7 @@ class StoryMenuState extends MusicBeatState
 					funnyText.screenCenter();
 					funnyText.x = FlxG.width/2 - 250;
 					funnyText.y = FlxG.height/2 - 64;
-					funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+					funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 					add(funnyText);
 					FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 						onComplete: function(tween:FlxTween)
@@ -302,7 +302,7 @@ class StoryMenuState extends MusicBeatState
 					funnyText.screenCenter();
 					funnyText.x = FlxG.width/2 - 250;
 					funnyText.y = FlxG.height/2 - 64;
-					funnyText.setFormat("VCR OSD Mono", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+					funnyText.setFormat("Segoe Print Bold", 64, FlxColor.RED, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 					add(funnyText);
 					FlxTween.tween(funnyText, {alpha: 0}, 0.6, {
 						onComplete: function(tween:FlxTween)

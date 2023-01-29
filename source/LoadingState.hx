@@ -137,13 +137,13 @@ class LoadingState extends MusicBeatState
 
 		callbackTxt = new FlxText(30, 0, 0, "");
 		callbackTxt.scrollFactor.set();
-		callbackTxt.setFormat("VCR OSD Mono", 16, 0xffffffff, CENTER);
+		callbackTxt.setFormat("Segoe Print Bold", 16, 0xffffffff, CENTER);
 		callbackTxt.screenCenter(Y);
 		add(callbackTxt);
 
 		tipTxt = new FlxText(0, FlxG.height - 48, 0, tips[FlxG.random.int(0,tips.length-1)]);
 		tipTxt.scrollFactor.set();
-		tipTxt.setFormat("VCR OSD Mono", 16, 0xffffffff, LEFT);
+		tipTxt.setFormat("Segoe Print Bold", 16, 0xffffffff, LEFT);
 		add(tipTxt);
 
 		var timer = new FlxTimer().start(4, function(tmr:FlxTimer) {

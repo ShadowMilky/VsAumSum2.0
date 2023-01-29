@@ -70,7 +70,7 @@ class WeekEditorState extends MusicBeatState
 				FlxG.sound.playMusic(Paths.music('dsi'), 0.5);
 		}
 		txtWeekTitle = new FlxText(FlxG.width * 0.7, 10, 0, "", 32);
-		txtWeekTitle.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, RIGHT);
+		txtWeekTitle.setFormat("Segoe Print Bold", 32, FlxColor.WHITE, RIGHT);
 		txtWeekTitle.alpha = 0.7;
 		
 		var ui_tex = Paths.getSparrowAtlas('storymenu/campaign_menu_UI_assets');

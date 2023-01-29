@@ -128,7 +128,7 @@ class FreeplaySectionState extends MusicBeatState
 
 		sectionTxt = new FlxText(0, 0, 0, "");
 		sectionTxt.scrollFactor.set();
-		sectionTxt.setFormat("VCR OSD Mono", 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
+		sectionTxt.setFormat("Segoe Print Bold", 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.SHADOW, FlxColor.BLACK);
 		sectionTxt.screenCenter(X);
 		sectionTxt.y += 620;
 		add(sectionTxt);
