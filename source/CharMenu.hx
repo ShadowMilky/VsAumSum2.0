@@ -42,7 +42,7 @@ class CharMenu extends MusicBeatState
 	var unlockedCharactersBGs:Array<String> = [];
 
 	// Folder locations
-	var backgroundFolder:String = 'background'; // The location of the folder storing the characters backgrounds
+	var backgroundFolder:String = 'shared'; // The location of the folder storing the characters backgrounds
 	var fontFolder:String = 'assets/fonts/'; // Please don't change unless font folder changes, leads to the fonts folder
 	var sharedFolder:String = 'shared'; // Please don't change, leads to the shared folder
 
@@ -90,7 +90,7 @@ class CharMenu extends MusicBeatState
 		unlockedCharsCheck();
 
 		// Making sure the background is added first to be in the back and then adding the character names and character images afterwords
-		menuBG = new FlxSprite().loadGraphic(Paths.image(unlockedCharactersBGs[curSelected], backgroundFolder));
+		menuBG = new FlxSprite().loadGraphic(Paths.image(unlockedCharactersBGs[curSelected], 'shared'));
 		menuBG.setGraphicSize(Std.int(menuBG.width * 1.1));
 		menuBG.updateHitbox();
 		menuBG.screenCenter();
@@ -129,7 +129,7 @@ class CharMenu extends MusicBeatState
 		// Not centered Correctly, need to figure out how to do that
 		// New Animated Arrows
 		newArrows = new FlxSprite();
-		newArrows.frames = Paths.getSparrowAtlas('newArrows', 'background');
+		newArrows.frames = Paths.getSparrowAtlas('newArrows', 'shared');
 		newArrows.animation.addByPrefix('idle', 'static', 24, false);
 		newArrows.animation.addByPrefix('left', 'leftPress', 24, false);
 		newArrows.animation.addByPrefix('right', 'rightPress', 24, false);
@@ -297,7 +297,7 @@ class CharMenu extends MusicBeatState
 	{
 		remove(icon);
 
-		menuBG.loadGraphic(Paths.image(unlockedCharactersBGs[curSelected], backgroundFolder));
+		menuBG.loadGraphic(Paths.image(unlockedCharactersBGs[curSelected], 'shared'));
 
 		var barBG:FlxSprite = new FlxSprite(0, FlxG.height * 0.9).loadGraphic(Paths.image('healthBar', sharedFolder));
 		barBG.screenCenter(X);
