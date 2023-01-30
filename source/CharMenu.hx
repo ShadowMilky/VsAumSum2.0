@@ -24,6 +24,8 @@ import lime.utils.Assets;
 // These may be swapped depending on what may need it. Some older ones may need a different one based on the 'Song' TypeDef
 // import Song.SongData; // What my version of Kade engine is apparently using
 
+// torch the dragon originally made this lol
+
 class CharMenu extends MusicBeatState
 {
 	// Selectable Character Variables
