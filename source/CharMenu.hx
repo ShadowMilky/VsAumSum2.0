@@ -92,7 +92,7 @@ class CharMenu extends MusicBeatState
         FlxG.sound.playMusic(Paths.music('aumsumCharSelect'), 0);
 
 		// Making sure the background is added first to be in the back and then adding the character names and character images afterwords
-		menuBG = new FlxSprite().loadGraphic(Paths.image(unlockedCharactersBGs[curSelected], 'shared'));
+		menuBG = new FlxSprite().loadGraphic(Paths.image('charMenu/' + unlockedCharactersBGs[curSelected], 'shared'));
 		menuBG.setGraphicSize(Std.int(menuBG.width * 1.1));
 		menuBG.updateHitbox();
 		menuBG.screenCenter();
@@ -299,7 +299,7 @@ class CharMenu extends MusicBeatState
 	{
 		remove(icon);
 
-		menuBG.loadGraphic(Paths.image(unlockedCharactersBGs[curSelected], 'shared'));
+		menuBG.loadGraphic(Paths.image('charMenu/' + unlockedCharactersBGs[curSelected], 'shared'));
 
 		var barBG:FlxSprite = new FlxSprite(0, FlxG.height * 0.9).loadGraphic(Paths.image('healthBar', 'shared'));
 		barBG.screenCenter(X);
