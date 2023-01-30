@@ -2319,10 +2319,11 @@ class ChartingState extends MusicBeatState
 
 		if (FlxG.sound.music.playing)
 		{
-			var mult:Float = FlxMath.lerp(1, iconArray[i].scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-			leftIcon.scale.set(mult, mult);
+			var mult1:Float = FlxMath.lerp(1, leftIcon.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+			var mult2:Float = FlxMath.lerp(1, rightIcon.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+			leftIcon.scale.set(mult1, mult1);
 			leftIcon.updateHitbox();
-			rightIcon.scale.set(mult, mult);
+			rightIcon.scale.set(mult2, mult2);
 			rightIcon.updateHitbox();
 		}
 
