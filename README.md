@@ -1,3 +1,7 @@
+# AumSum Funkin'
+Do you even expect me to edit this?
+Ithink not.
+
 # PublicDenpaEngine
 
 The Public Denpa Engine Repo. Will be updated occasionally, but only when an actual pre-release/release happens.
@@ -141,15 +145,16 @@ The Public Denpa Engine Repo. Will be updated occasionally, but only when an act
 And of course, all of Psych's 0.5.2h features (not 0.6+, that is GARBO)
 
 ## How to Build
+It would work which I would hope, unless you're using a school computer, which requires admin perms.
 
-1) MAKE SURE YOUR HAXE IS 4.2.5 OR HIGHER!!!
+1) MAKE SURE YOUR HAXE IS 4.2.5 OR HIGHER!!! 4.1.5 FORGETS A HANDFUL OF STUFF!!!!
 
-2) Run QUICK SETUP.bat
+2) Run QUICK SETUP.bat.
 
-3) Install Visual Studio Community 2019
+3) Install Visual Studio Community 2019.
 
-4) Install "MSVC v142 - VS 2019 C++ x64/x86 build tools" and "Windows SDK (10.0.17763.0)"
+4) Install "MSVC v142 - VS 2019 C++ x64/x86 build tools" and "Windows SDK (10.0.17763.0)".
 
-5) Run the compile command (lime build windows) or run one of the build batch files
+5) Run the compile command (lime build windows) / (lime test windows) or run one of the build batch files.
 
-6) Pray that it works
+6) Pray that it works.
