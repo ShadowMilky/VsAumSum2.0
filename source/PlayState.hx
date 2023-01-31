@@ -8556,8 +8556,8 @@ class PlayState extends MusicBeatState
 	public function recalculateIconAnimations(?forceNeutral:Bool = false) {
 		//find less buggy way of doing this
 		if (cpuControlled) {
-			iconP1.changeIcon('botfriend');
-			iconP1Poison.changeIcon('botfriend');
+			iconP1.changeIcon(boyfriend.healthIcon);
+			iconP1Poison.changeIcon(boyfriend.healthIcon);
 		} else if (iconP1.getCharacter() != boyfriend.healthIcon) {
 			iconP1.changeIcon(boyfriend.healthIcon);
 			iconP1Poison.changeIcon(boyfriend.healthIcon);
