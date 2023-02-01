@@ -2319,12 +2319,15 @@ class ChartingState extends MusicBeatState
 
 		if (FlxG.sound.music.playing)
 		{
-			var mult1:Float = FlxMath.lerp(1, leftIcon.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-			var mult2:Float = FlxMath.lerp(1, rightIcon.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-			leftIcon.scale.set(mult1, mult1);
-			leftIcon.updateHitbox();
-			rightIcon.scale.set(mult2, mult2);
-			rightIcon.updateHitbox();
+			if (curBeat % 1 == 0)
+			{
+				var mult1:Float = FlxMath.lerp(1, leftIcon.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+				var mult2:Float = FlxMath.lerp(1, rightIcon.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+				leftIcon.scale.set(mult1, mult1);
+				leftIcon.updateHitbox();
+				rightIcon.scale.set(mult2, mult2);
+				rightIcon.updateHitbox();
+			}
 		}
 
 		if (FlxG.mouse.justPressed)
@@ -3489,12 +3492,15 @@ class ChartingState extends MusicBeatState
 		// trace('BEAT HIT: ' + curBeat + ', LAST HIT: ' + lastBeatHit);
 		// return;
 		// }
+		if (curBeat % 1 == 0)
+			{
 		bg.scale.set(1.06, 1.06);
 		bg.updateHitbox();
 		leftIcon.scale.set(1.10, 1.10);
 		leftIcon.updateHitbox();
 		rightIcon.scale.set(1.10, 1.10);
 		rightIcon.updateHitbox();
+			}
 		// lastBeatHit = curBeat;
 		// trace('beat hit' + curBeat);
 	}
