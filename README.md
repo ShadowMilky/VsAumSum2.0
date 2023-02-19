@@ -1,6 +1,7 @@
 # AumSum Funkin'
 Do you even expect me to edit this?
-Ithink not.
+
+I think not.
 
 # PublicDenpaEngine
 
