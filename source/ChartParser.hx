@@ -5,7 +5,7 @@ import flixel.util.FlxStringUtil;
 using StringTools;
 
 /**
-* Class used to parse a Song Chart.
+* Class used to parse a Song Chart. This is a leftover from the Ludum Dare prototype and is unused.
 */
 class ChartParser
 {
