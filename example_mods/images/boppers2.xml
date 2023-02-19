@@ -1,0 +1,5 @@
+<textureatlas xmlns="http://www.w3.org/1999/xhtml" imagepath="boppers2.png">
+<subtexture name="bopper3" x="0" y="960" width="953" height="469"></subtexture>
+<subtexture name="bopper2" x="0" y="482" width="949" height="477"></subtexture>
+<subtexture name="bopper1" x="0" y="0" width="947" height="481"></subtexture>
+</textureatlas>

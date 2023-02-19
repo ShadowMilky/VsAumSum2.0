@@ -1,0 +1,5 @@
+<textureatlas xmlns="http://www.w3.org/1999/xhtml" imagepath="boppers1.png">
+<subtexture name="joey mama3" x="0" y="0" width="955" height="474"></subtexture>
+<subtexture name="joey mama2" x="0" y="475" width="947" height="478"></subtexture>
+<subtexture name="joey mama" x="0" y="954" width="939" height="482"></subtexture>
+</textureatlas>
