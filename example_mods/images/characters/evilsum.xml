@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="evilsum.png"><SubTexture name="evilsum idle-thing0000" x="0" y="0" width="341" height="489" frameX="0" frameY="0" frameWidth="341" frameHeight="489" />
+<SubTexture name="evilsum up0000" x="341" y="0" width="358" height="552" frameX="0" frameY="0" frameWidth="358" frameHeight="552" />
+<SubTexture name="evilsum up0001" x="699" y="0" width="379" height="554" frameX="0" frameY="0" frameWidth="379" frameHeight="554" />
+<SubTexture name="evilsum down0000" x="0" y="554" width="406" height="488" frameX="0" frameY="0" frameWidth="406" frameHeight="488" />
+<SubTexture name="evilsum down0001" x="406" y="554" width="435" height="472" frameX="0" frameY="0" frameWidth="435" frameHeight="472" />
+<SubTexture name="evilsum right0000" x="841" y="554" width="343" height="470" frameX="0" frameY="0" frameWidth="343" frameHeight="470" />
+<SubTexture name="evilsum right0001" x="0" y="1042" width="338" height="480" frameX="0" frameY="0" frameWidth="338" frameHeight="480" />
+<SubTexture name="evilsum left0000" x="338" y="1042" width="351" height="476" frameX="0" frameY="0" frameWidth="351" frameHeight="476" />
+<SubTexture name="evilsum left0001" x="689" y="1042" width="359" height="486" frameX="0" frameY="0" frameWidth="359" frameHeight="486" />
+<SubTexture name="evilsum hey0000" x="0" y="1528" width="351" height="476" frameX="0" frameY="0" frameWidth="351" frameHeight="476" />
+<SubTexture name="evilsum idle0000" x="351" y="1528" width="341" height="489" frameX="0" frameY="0" frameWidth="341" frameHeight="489" />
+</TextureAtlas>

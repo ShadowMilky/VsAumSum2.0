@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="newsum.png"><SubTexture name="newsum danceleft0000" x="0" y="0" width="390" height="621" frameX="0" frameY="0" frameWidth="390" frameHeight="621" />
+<SubTexture name="newsum danceleft0001" x="390" y="0" width="391" height="636" frameX="0" frameY="0" frameWidth="391" frameHeight="636" />
+<SubTexture name="newsum danceleft0002" x="781" y="0" width="391" height="636" frameX="0" frameY="0" frameWidth="391" frameHeight="636" />
+<SubTexture name="newsum danceleft0003" x="1172" y="0" width="385" height="650" frameX="0" frameY="0" frameWidth="385" frameHeight="650" />
+<SubTexture name="newsum danceright0000" x="0" y="650" width="473" height="650" frameX="0" frameY="0" frameWidth="473" frameHeight="650" />
+<SubTexture name="newsum danceright0001" x="473" y="650" width="433" height="648" frameX="0" frameY="0" frameWidth="433" frameHeight="648" />
+<SubTexture name="newsum danceright0002" x="906" y="650" width="391" height="636" frameX="0" frameY="0" frameWidth="391" frameHeight="636" />
+<SubTexture name="newsum danceright0003" x="1297" y="650" width="391" height="636" frameX="0" frameY="0" frameWidth="391" frameHeight="636" />
+<SubTexture name="newsum left0000" x="0" y="1300" width="473" height="650" frameX="0" frameY="0" frameWidth="473" frameHeight="650" />
+<SubTexture name="newsum left0001" x="473" y="1300" width="555" height="649" frameX="0" frameY="0" frameWidth="555" frameHeight="649" />
+<SubTexture name="newsum left0002" x="1028" y="1300" width="636" height="664" frameX="0" frameY="0" frameWidth="636" frameHeight="664" />
+<SubTexture name="newsum down0000" x="1664" y="1300" width="454" height="650" frameX="0" frameY="0" frameWidth="454" frameHeight="650" />
+<SubTexture name="newsum down0001" x="0" y="1964" width="513" height="590" frameX="0" frameY="0" frameWidth="513" frameHeight="590" />
+<SubTexture name="newsum up0000" x="513" y="1964" width="385" height="650" frameX="0" frameY="0" frameWidth="385" frameHeight="650" />
+<SubTexture name="newsum up0001" x="898" y="1964" width="481" height="654" frameX="0" frameY="0" frameWidth="481" frameHeight="654" />
+<SubTexture name="newsum up0002" x="1379" y="1964" width="497" height="661" frameX="0" frameY="0" frameWidth="497" frameHeight="661" />
+<SubTexture name="newsum right0000" x="0" y="2625" width="450" height="643" frameX="0" frameY="0" frameWidth="450" frameHeight="643" />
+<SubTexture name="newsum right0001" x="450" y="2625" width="484" height="634" frameX="0" frameY="0" frameWidth="484" frameHeight="634" />
+</TextureAtlas>
