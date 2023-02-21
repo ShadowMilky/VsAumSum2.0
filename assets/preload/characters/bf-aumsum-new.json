@@ -1,80 +1,79 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				-12,
 				-5
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singDOWNmiss",
-			"fps": 24,
-			"name": "bf aumsum new down miss",
-			"indices": []
+			"indices": [],
+			"name": "bf aumsum new down miss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-39,
 				9
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "singUPmiss",
-			"fps": 24,
-			"name": "bf aumsum new up miss",
-			"indices": []
+			"indices": [],
+			"name": "bf aumsum new up miss"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-39,
 				9
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "hey",
-			"fps": 24,
-			"name": "bf aumsum new hey",
-			"indices": []
+			"indices": [],
+			"name": "bf aumsum new hey"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				108,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "deathLoop",
-			"fps": 24,
-			"name": "bf aumsum new dead loop",
-			"indices": []
+			"indices": [],
+			"name": "bf aumsum new dead loop"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				108,
 				0
 			],
+			"loop": false,
+			"fps": 24,
 			"anim": "deathConfirm",
-			"fps": 24,
-			"name": "bf aumsum new dead confirm",
-			"indices": []
+			"indices": [],
+			"name": "bf aumsum new dead confirm"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				108,
 				0
 			],
-			"anim": "firstDeath",
+			"loop": false,
 			"fps": 24,
-			"name": "bf aumsum new dies",
-			"indices": []
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "bf aumsum new dies"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-12,
 				-5
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "bf aumsum new down",
+			"anim": "singDOWN",
 			"indices": [
 				0,
 				1,
@@ -96,17 +95,17 @@
 				17,
 				18,
 				19
-			]
+			],
+			"name": "bf aumsum new down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-39,
 				9
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "bf aumsum new up",
+			"anim": "singUP",
 			"indices": [
 				0,
 				1,
@@ -128,82 +127,55 @@
 				17,
 				18,
 				19
-			]
+			],
+			"name": "bf aumsum new up"
 		},
 		{
+			"loop": true,
 			"offsets": [
 				-6,
 				0
 			],
-			"indices": [],
-			"fps": 24,
+			"loop_point": 0,
 			"anim": "idle",
-			"loop": true,
+			"fps": 24,
 			"name": "bf aumsum new idle",
-			"loop_point": 0
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				-34,
 				2
 			],
-			"indices": [],
-			"fps": 24,
+			"loop_point": 0,
 			"anim": "singRIGHTmiss",
-			"loop": false,
+			"fps": 24,
 			"name": "bf aumsum new left miss",
-			"loop_point": 0
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
 				78,
 				79
 			],
-			"indices": [],
-			"fps": 24,
+			"loop_point": 0,
 			"anim": "singLEFTmiss",
-			"loop": false,
+			"fps": 24,
 			"name": "bf aumsum new right miss",
-			"loop_point": 0
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				83,
-				103
+				-52,
+				1
 			],
-			"indices": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12,
-				13,
-				14,
-				15,
-				16,
-				17,
-				18,
-				19
-			],
-			"fps": 24,
+			"loop_point": 0,
 			"anim": "singRIGHT",
-			"loop": false,
+			"fps": 24,
 			"name": "bf aumsum new left",
-			"loop_point": 0
-		},
-		{
-			"offsets": [
-				-37,
-				2
-			],
 			"indices": [
 				0,
 				1,
@@ -225,12 +197,40 @@
 				17,
 				18,
 				19
-			],
-			"fps": 24,
-			"anim": "singLEFT",
+			]
+		},
+		{
 			"loop": false,
+			"offsets": [
+				67,
+				102
+			],
+			"loop_point": 0,
+			"anim": "singLEFT",
+			"fps": 24,
 			"name": "bf aumsum new right",
-			"loop_point": 0
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
+			]
 		}
 	],
 	"sarvente_floating": false,
@@ -246,18 +246,18 @@
 		0
 	],
 	"death_props": {
-		"endSfx": "gameOverEnd",
-		"bpm": 100,
-		"loopSfx": "gameOver",
 		"character": "bf-dead",
-		"startSfx": "fnf_loss_sfx"
+		"loopSfx": "gameOver",
+		"endSfx": "gameOverEnd",
+		"startSfx": "fnf_loss_sfx",
+		"bpm": 100
 	},
 	"image": "characters/bf_aumsum_newer",
 	"trail_length": null,
 	"trail_delay": null,
 	"position": [
 		0,
-		260
+		280
 	],
 	"trail_diff": null,
 	"float_speed": null,
