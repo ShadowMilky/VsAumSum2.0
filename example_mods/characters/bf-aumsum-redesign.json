@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "bf aumsum redesign idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "bf aumsum redesign left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				12,
+				-17
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "bf aumsum redesign down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-15,
+				14
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "bf aumsum redesign up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				-3
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "bf aumsum redesign right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/BF_aumsum_redesign",
+	"position": [
+		0,
+		220
+	],
+	"healthicon": "bf-redesign",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		20
+	],
+	"sing_duration": 6.1,
+	"scale": 1.2
+}
